@@ -7,3 +7,6 @@ https://raghadestanbouli.github.io/AGOL/DisplayMap.html
 
 ## Tutorial 2
 https://raghadestanbouli.github.io/AGOL/DisplayLocation.html
+
+## Tutorial 3
+https://raghadestanbouli.github.io/AGOL/Add_point_line_polygon.html
