@@ -6,4 +6,4 @@ https://services3.arcgis.com/58pl1WWVguGpHvFp/arcgis/rest/services/trees/Feature
 https://raghadestanbouli.github.io/AGOL/DisplayMap.html
 
 ## Tutorial 2
-https://raghadestanbouli.github.io/AGOL/DisplayMap.html
+https://raghadestanbouli.github.io/AGOL/DisplayLocation.html
