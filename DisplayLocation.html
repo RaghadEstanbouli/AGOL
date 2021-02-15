@@ -24,7 +24,9 @@
 	  "esri/Map",
 	  "esri/views/MapView",
 	  "esri/widgets/Locate",
-	  ], function (esriConfig,Map, MapView,Locate,) {
+	  "esri/widgets/Track",
+      "esri/Graphic"
+	  ], function (esriConfig,Map, MapView,Locate,Track,Graphic) {
       esriConfig.apiKey = "AAPKe44094802c9b419da2d2cb4bceb64decASVTKTxea3Ak7iigXqZDZ4X2rVgQw4g2eJc8VNPKJFiyHmCqyMPt3tU23aR5VmQ0";
       const map = new Map({
           basemap: "arcgis-topographic" // Basemap layer service
@@ -47,7 +49,22 @@
         });
         view.ui.add(locate, "top-left");
 		
-		
+		const track = new Track({
+          view: view,
+          graphic: new Graphic({
+            symbol: {
+              type: "simple-marker",
+              size: "12px",
+              color: "green",
+              outline: {
+                color: "#efefef",
+                width: "1.5px"
+              }
+            }
+          }),
+          useHeadingEnabled: false
+        });
+        view.ui.add(track, "top-left");
 		
 		
       
