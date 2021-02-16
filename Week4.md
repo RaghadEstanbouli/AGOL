@@ -10,3 +10,6 @@ https://raghadestanbouli.github.io/AGOL/DisplayLocation.html
 
 ## Tutorial 3
 https://raghadestanbouli.github.io/AGOL/Add_point_line_polygon.html
+
+
+https://raghadestanbouli.github.io/AGOL/Add_feature_layer.html
