@@ -12,4 +12,4 @@ https://raghadestanbouli.github.io/AGOL/DisplayLocation.html
 https://raghadestanbouli.github.io/AGOL/Add_point_line_polygon.html
 
 ## Tutorial 4
-https://raghadestanbouli.github.io/AGOL/AGOL/Display_webmap.html
+https://raghadestanbouli.github.io/AGOL/Display_webmap.html
