@@ -73,7 +73,28 @@
       view.ui.add(editor, "top-right");
 	  
 	
-	  
+	myPointsFeatureLayer.featureReduction = {
+	  type: "cluster",
+	  clusterRadius: "200px",
+	  clusterMinSize: "24px",
+	  clusterMaxSize: "60px",
+	  labelingInfo: [{
+		deconflictionStrategy: "none",
+		labelExpressionInfo: {
+		  expression: "Text($feature.cluster_count, '#,###')"
+		},
+		symbol: {
+		  type: "text",
+		  color: "#004a5d",
+		  font: {
+			weight: "bold",
+			family: "Noto Sans",
+			size: "12px"
+		  }
+		},
+    labelPlacement: "center-center",
+  }]
+}
 	  
 		myPointsFeatureLayer.renderer = {
 		type: "simple",  // autocasts as new SimpleRenderer()
