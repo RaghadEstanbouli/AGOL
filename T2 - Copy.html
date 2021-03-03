@@ -44,17 +44,21 @@
       // Create a UI with the filter expressions
       const sqlExpressions = ["Choose The Province...","1=1", "PRENAME='Alberta'", "PRENAME='British Columbia'", "PRENAME='Manitoba'",
                               "PRENAME='New Brunswick'", "PRENAME='Nunavut'", "PRENAME='Ontario'", "PRENAME='Prince Edward Island'",
-                              "PRENAME='Quebec'", "PRENAME='Saskatchewan'", "PRENAME='Yukon'",];
+                              "PRENAME='Quebec'", "PRENAME='Saskatchewan'", "PRENAME='Yukon'"];
+     const Alias = ["Choose The Province...","All", "Alberta", "British Columbia", "Manitoba",
+                              "New Brunswick", "Nunavut", "Ontario", "Prince Edward Island",
+                              "Quebec", "Saskatchewan", "Yukon"];
 
       // UI
       const selectFilter = document.createElement("select");
       selectFilter.setAttribute("class", "esri-widget esri-select");
       selectFilter.setAttribute("style", "width: 275px; font-family: Avenir Next W00; font-size: 1em;");
-
+        var i=0;
       sqlExpressions.forEach(function(sql){
         let option = document.createElement("option");
         option.value = sql;
-        option.innerHTML = sql;
+        option.innerHTML = Alias[i];
+        i++;
         selectFilter.appendChild(option);
       });
 
